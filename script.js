@@ -77,7 +77,7 @@ const orderList = document.getElementById('orderList');
 const searchBar = document.getElementById('searchBar');
 let order = [];
 
-// Function to display the menu items
+// menu items
 function displayMenu(filteredItems) {
     menuContainer.innerHTML = ''; // Clear the menu container
 
@@ -105,7 +105,7 @@ function filterItems(category) {
     }
 }
 
-// Function to add an item to the order
+ to add an item to the order
 function addToOrder(itemId) {
     const item = menuItems.find(item => item.id === itemId);
     order.push(item);

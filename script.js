@@ -112,7 +112,7 @@ function addToOrder(itemId) {
     displayOrder();
 }
 
-// Function to display the order
+ display the order
 function displayOrder() {
     orderList.innerHTML = '';
     order.forEach(item => {
@@ -122,7 +122,7 @@ function displayOrder() {
     });
 }
 
-// Function to handle the order submission (payment simulation)
+
 function submitOrder() {
     if (order.length === 0) {
         alert("Your order is empty.");

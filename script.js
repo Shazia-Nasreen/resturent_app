@@ -1,4 +1,4 @@
-// Menu data (could come from an API or database)
+
 const menuItems = [
     // Appetizers
     { id: 1, name: "Spring Rolls", category: "appetizer", description: "Crispy spring rolls with dipping sauce.", price: 5.99, image: "images/spring-rolls.jpg" },

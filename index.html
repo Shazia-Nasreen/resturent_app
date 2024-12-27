@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Restaurant Menu</h1>
+        <nav>
+            <input type="search" id="searchBar" placeholder="Search for menu items..." />
+        </nav>
+    </header>
+
+    <section>
+        <h2>Menu Categories</h2>
+        <div class="filter-buttons">
+            <button onclick="filterItems('all')">All</button>
+            <button onclick="filterItems('appetizer')">Appetizers</button>
+            <button onclick="filterItems('main')">Main Courses</button>
+            <button onclick="filterItems('dessert')">Desserts</button>
+            <button onclick="filterItems('salads')">Salads</button>
+            <button onclick="filterItems('beverages')">Beverages</button>
+            <button onclick="filterItems('soup')">Soups</button>
+            <button onclick="filterItems('vegan')">Vegan</button>
+            <button onclick="filterItems('glutenFree')">Gluten-Free</button>
+            <button onclick="filterItems('seafood')">Seafood</button>
+            <button onclick="filterItems('pasta')">Pasta</button>
+            <button onclick="filterItems('pizza')">Pizza</button>
+            <button onclick="filterItems('snacks')">Snacks</button>
+            <button onclick="filterItems('steaks')">Steaks</button>
+            <button onclick="filterItems('sushi')">Sushi</button>
+        </div>
+    </section>
+
+    <section id="menu">
+        <!-- Menu items will be dynamically injected here -->
+    </section>
+
+    <section id="order">
+        <h2>Your Order</h2>
+        <ul id="orderList"></ul>
+        <button id="submitOrder" onclick="submitOrder()">Submit Order</button>
+    </section>
+
+    <footer>
+        <p>Restaurant &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
